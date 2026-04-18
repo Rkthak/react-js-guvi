@@ -1,20 +1,7 @@
-// functional components
-// HOOKS introduce and now support componet life cycle methods & state
+import { Component } from "react";
 
-function Header() {
-  return (
-    <>
-      <h1>GUVI</h1>
-      <nav>
-        <ul>
-          <li>home</li>
-          <li>about</li>
-          <li>practice</li>
-          <li>react</li>
-          <li>contact</li>
-        </ul>
-      </nav>
-    </>
-  );
+export default class Header extends Component {
+  render() {
+    return <h1>header</h1>;
+  }
 }
-export default Header;
