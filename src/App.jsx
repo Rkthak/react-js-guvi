@@ -1,10 +1,9 @@
 import Header from "./components/Header";
-import Home from "./components/Home";
 function App() {
+  let username = "Rajkumar";
   return (
     <>
-      <Header />
-      <Home />
+      <Header username={username} />
     </>
   );
 }

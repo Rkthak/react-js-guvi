@@ -1,19 +1,7 @@
-// functional components
-// HOOKS introduce and now support componet life cycle methods & state
-
-function Header() {
+function Header({ username }) {
   return (
     <>
-      <h1>GUVI</h1>
-      <nav>
-        <ul>
-          <li>home</li>
-          <li>about</li>
-          <li>practice</li>
-          <li>react</li>
-          <li>contact</li>
-        </ul>
-      </nav>
+      <h1>{username}</h1>
     </>
   );
 }
