@@ -2,7 +2,12 @@ import { Component } from "react";
 
 export default class Header extends Component {
   render() {
-    let name = "Rajkumar";
-    return <h1>{name}</h1>;
+    // this.props
+    let { name, age } = this.props;
+    return (
+      <h1>
+        hello, {name}! You are {age} years old!{" "}
+      </h1>
+    );
   }
 }
