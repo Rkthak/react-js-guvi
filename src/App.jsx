@@ -1,12 +1,14 @@
 import Header from "./components/Header";
 function App() {
-  let username = "Rajkumar";
-  {
-    /* parent to child communicate using props and attributes passing in child */
-  }
+  // get data from child using carrier function in parent and passing as props to the child
+
+  const recieveChildData = (name, age) => {
+    console.log(`hello ${name}! you are ${age} years old`);
+  };
+
   return (
     <>
-      <Header username={username} /> {/* child */}
+      <Header recieveChildData={recieveChildData} /> {/* child */}
     </>
   );
 }
