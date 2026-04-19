@@ -1,16 +1,9 @@
-import Header from "./components/Header";
-function App() {
-  // get data from child using carrier function in parent and passing as props to the child
+import React from "react";
+import CompA from "./components/CompA";
 
-  const recieveChildData = (name, age) => {
-    console.log(`hello ${name}! you are ${age} years old`);
-  };
-
-  return (
-    <>
-      <Header recieveChildData={recieveChildData} /> {/* child */}
-    </>
-  );
-}
+const App = () => {
+  let userName = "Raj";
+  return <CompA user={userName} />;
+};
 
 export default App;
